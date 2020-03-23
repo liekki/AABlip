@@ -1,7 +1,7 @@
 ﻿## Interface: 11303
 ## Title: AABlip
 ## Author: liekki
-## Version: 0.2.0
+## Version: 0.2.1
 ## Notes: Plays a small blip sound when your auto attacks connect
 ## Dependencies: 
 ## OptionalDeps:
