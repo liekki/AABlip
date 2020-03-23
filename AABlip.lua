@@ -5,11 +5,11 @@ f:SetScript("OnEvent", function(self, event)
 end)
 
 function f:OnEvent(event, ...)
-	local timestamp, eventType, something, sourceFlags = ...
-	local sourceIdentifier = strsplit("-", sourceFlags);
+	local timestamp, eventType, something, sourceFlags, sourceName = ...
 	local spellName = select(13, ...);
+	local playerName = UnitName("player");
 
-	if (sourceIdentifier == "Player") then
+	if (sourceName == playerName) then
 		if (eventType == "SWING_DAMAGE" or eventType == 'SWING_MISSED') then
 			PlaySoundFile("Interface\\AddOns\\AABlip\\blip.ogg", "Master");
 		end
